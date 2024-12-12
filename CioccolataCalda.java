@@ -2,8 +2,8 @@ public class CioccolataCalda extends Cioccolato {
     private double temperatura;
     private double densita;
 
-    public CioccolataCalda (String tipo, int perceCacao, double temperatura){
-        super(tipoDiCioccolato, percentualeCacao);
+    public CioccolataCalda (String tipoDiCioccolato, String tipoDiAggiunta, int percentualeCacao, int unita, double temperatura, double densita){
+        super(tipoDiCioccolato, tipoDiAggiunta, percentualeCacao, unita);
         this.temperatura=temperatura;
         this.densita=densita;
     }
@@ -11,6 +11,6 @@ public class CioccolataCalda extends Cioccolato {
     @Override
     public void produce(){
         super.produce();
-        System.out.println("temperatura; "+ temperatura " C, Densita: "+densita);
+        System.out.println("temperatura=" + temperatura  + " C, Densita: "+densita);
     }
 }

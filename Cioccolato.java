@@ -52,13 +52,19 @@ public abstract class Cioccolato {
     }
 
     // toString
-    @Override
-    public String toString() {
-        return "Cioccolato{" +
+    public void produce() {
+        System.out.println("Cioccolato{" +
                 "tipoDiCioccolato='" + tipoDiCioccolato + '\'' +
                 ", tipoDiAggiunta='" + tipoDiAggiunta + '\'' +
                 ", percentualeCacao=" + percentualeCacao +
                 ", unita=" + unita +
-                '}';
+                '}');
+    }
+
+    public static void main(String[] args) {
+        final int MAX_CIOCCOLATO_GIORNALIERO = 100;
+        int cioccolatoRimasto = MAX_CIOCCOLATO_GIORNALIERO;
+        
+        boolean continuare = true;
     }
 }
